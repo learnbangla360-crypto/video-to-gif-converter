@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Video to GIF Converter – Free Online GIF Maker (MP4, WebM)</title>
+<meta name="description" content="Free online video to GIF converter. Trim a clip, pick the size and frame rate, and make an animated GIF in your browser. No signup, no watermark.">
+<link rel="canonical" href="https://videotogif.globrik.com/">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#eef2f9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1420" media="(prefers-color-scheme: dark)">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Globrik">
+<meta property="og:title" content="Video to GIF Converter – Free Online GIF Maker (MP4, WebM)">
+<meta property="og:description" content="Free online video to GIF converter. Trim a clip, pick the size and frame rate, and make an animated GIF in your browser. No signup, no watermark.">
+<meta property="og:url" content="https://videotogif.globrik.com/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Video to GIF Converter – Free Online GIF Maker (MP4, WebM)">
+<meta name="twitter:description" content="Free online video to GIF converter. Trim a clip, pick the size and frame rate, and make an animated GIF in your browser. No signup, no watermark.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231d4ed8'/%3E%3Cpath d='M12 9l12 7-12 7z' fill='white'/%3E%3C/svg%3E">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Video to GIF Converter","url":"https://videotogif.globrik.com/","description":"Free online video to GIF converter. Trim a clip, pick the size and frame rate, and make an animated GIF in your browser. No signup, no watermark.","applicationCategory":"MultimediaApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://globrik.com/"},{"@type":"ListItem","position":2,"name":"Video to GIF Converter","item":"https://videotogif.globrik.com/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is this video to GIF converter really free?","acceptedAnswer":{"@type":"Answer","text":"Yes. It's free with no trial, no watermark and no account. You can convert as many clips as you like. The limits are technical: video files up to 500 MB, clips up to 30 seconds and 450 frames. Your own device does the work, so a slower phone or laptop will simply take longer on big clips."}},{"@type":"Question","name":"Is it safe to use my video here?","acceptedAnswer":{"@type":"Answer","text":"Your video never leaves your device. The page plays it locally, grabs frames onto a canvas and builds the GIF in memory, with no upload step. You can check this by turning off your internet connection after the page loads and converting a short clip. Reset or close the page and the GIF is released."}},{"@type":"Question","name":"Do I need to sign up or give an email?","acceptedAnswer":{"@type":"Answer","text":"No. There's no signup, no email field and no download gate. Drop in a video, set the range and press Convert to GIF. Nothing in the process asks who you are, so you can use it for personal clips, client work or a quick test without leaving any details behind."}},{"@type":"Question","name":"What video formats can I convert to GIF?","acceptedAnswer":{"@type":"Answer","text":"Any video your browser can play. In practice that means MP4 with H.264, WebM and often MOV. Some files, such as HEVC (H.265) videos, won't play in every browser. If you see an error, convert the file to MP4 (H.264) or WebM first. For MP4 files in particular, you can also try the MP4 to GIF Converter."}},{"@type":"Question","name":"Why is my GIF file so big?","acceptedAnswer":{"@type":"Answer","text":"GIF compresses poorly compared with video, and size grows with width, frame rate and length. A wide, long, smooth clip can reach many megabytes. Lower the width to 320 or 480 pixels, drop to 10 frames per second, trim a second or two, and use fewer colors. Turn dithering off, since it adds detail the compressor can't squeeze."}},{"@type":"Question","name":"What frame rate is best for a GIF?","acceptedAnswer":{"@type":"Answer","text":"Ten to fifteen frames per second suits most clips. Ten keeps files small and still looks smooth for screen recordings and reactions. Fifteen helps with fast action. Going to 20 makes motion fluid but roughly doubles the frame count compared with 10, so the file grows quickly. Five to eight works for slow demos."}},{"@type":"Question","name":"Does a GIF keep the sound from my video?","acceptedAnswer":{"@type":"Answer","text":"No. GIF is a silent format and has no audio track, so the sound is dropped. If you need audio, share the original video or a short MP4 instead. If you only need the sound, a separate video to MP3 tool is the right choice. The GIF made here contains only the picture."}},{"@type":"Question","name":"How long can the GIF be?","acceptedAnswer":{"@type":"Answer","text":"This tool accepts clips up to 30 seconds and up to 450 frames, whichever you reach first. For most uses, 3 to 6 seconds is plenty and gives a file you can actually share. If your clip is longer, set a start and end time, or cut the video first with the Video Trimmer."}},{"@type":"Question","name":"Will the GIF lose quality compared to the video?","acceptedAnswer":{"@type":"Answer","text":"Yes, to some degree. A GIF frame can only use up to 256 colors, so photos and gradients may look grainier than the source. This tool builds one shared palette from the clip. Dithering can smooth gradients at the cost of a larger file, and a smaller width hides some of the color loss."}},{"@type":"Question","name":"Can I use the converter on my phone or offline?","acceptedAnswer":{"@type":"Answer","text":"Yes to both, with limits. The page works on current iPhone and Android browsers with large tap targets. Once it has fully loaded, the conversion needs no connection, because nothing goes to a server. Opening the page offline for the first time only works if your browser has it cached, so load it once while you're online."}}]}</script>
+<style>
+:root{--bg:#eef2f9;--surface:#fff;--panel:#f7f9fd;--text:#111827;--muted:#4b5563;--border:#d3d9e6;--drop:#d9deea;--dropb:#4b5563;--accent:#1d4ed8;--accentt:#fff;--soft:#e3eafb;--ok:#166534;--err:#b91c1c;--warn:#92400e;--chk1:#e5e7eb;--chk2:#fff;color-scheme:light dark}
+@media(prefers-color-scheme:dark){:root{--bg:#0f1420;--surface:#161c2b;--panel:#1a2133;--text:#f3f4f6;--muted:#b0b9cb;--border:#2d3856;--drop:#212a43;--dropb:#8f9cba;--accent:#7fa8ff;--accentt:#0b1220;--soft:#243050;--ok:#6ee7a0;--err:#fca5a5;--warn:#fcd34d;--chk1:#2c3552;--chk2:#1a2133}}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{margin:0;font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text)}
+a{color:var(--accent)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.hdr{background:var(--surface);border-bottom:1px solid var(--border)}
+.hin{max-width:1180px;margin:0 auto;padding:0 20px;display:flex;align-items:center;gap:20px;min-height:56px}
+.logo{font-weight:800;font-size:1.35rem;color:var(--text);text-decoration:none;letter-spacing:-.02em}
+nav.main{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
+nav.main a{display:inline-flex;align-items:center;min-height:44px;padding:0 10px;color:var(--text);text-decoration:none;font-weight:500;white-space:nowrap}
+nav.main a:hover{text-decoration:underline}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+h1{font-size:clamp(1.75rem,4.2vw,2.6rem);line-height:1.15;margin:28px 0 8px;font-weight:800;letter-spacing:-.02em}
+.lead{color:var(--muted);margin:0 0 20px;font-size:1.05rem}
+.tool{display:grid;grid-template-columns:minmax(280px,360px) 1fr;background:var(--panel);border:1px solid var(--border);border-radius:16px;overflow:hidden}
+.panel{padding:18px 16px;border-right:1px solid var(--border)}
+.stage{padding:10px;min-width:0}
+.ph{font-weight:700;font-size:1.05rem;margin:14px 0 8px}
+.panel>.ph:first-child{margin-top:0}
+label,legend{display:block;font-size:.88rem;font-weight:600;margin:12px 0 5px;padding:0}
+fieldset{border:0;margin:0;padding:0;min-width:0}
+input[type=text],select{width:100%;min-height:44px;padding:8px 12px;border:1px solid var(--border);border-radius:10px;background:var(--surface);color:var(--text);font:inherit}
+input[type=color]{width:100%;min-height:44px;padding:4px;border:1px solid var(--border);border-radius:10px;background:var(--surface);cursor:pointer}
+input[type=range]{width:100%;min-height:44px;accent-color:var(--accent)}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.seg{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.segb{min-height:44px;border:1px solid var(--border);border-radius:10px;background:var(--surface);color:var(--text);font:inherit;font-weight:600;cursor:pointer}
+.segb[aria-pressed=true]{border-color:var(--accent);background:var(--soft)}
+.opts{display:flex;gap:6px}
+.opt{position:relative;flex:1;margin:0;font-weight:500}
+.opt input{position:absolute;opacity:0;inset:0}
+.opt span{display:flex;align-items:center;justify-content:center;min-height:44px;border:1px solid var(--border);border-radius:10px;background:var(--surface);cursor:pointer;font-size:.9rem}
+.opt input:checked+span{border-color:var(--accent);background:var(--soft);font-weight:700}
+.opt input:focus-visible+span{outline:3px solid var(--accent);outline-offset:2px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:44px;padding:0 16px;border-radius:10px;border:1px solid var(--border);background:var(--surface);color:var(--text);font:inherit;font-weight:600;cursor:pointer;text-decoration:none;text-align:center}
+.btn.pri{background:var(--accent);border-color:var(--accent);color:var(--accentt)}
+.btn:disabled{opacity:.55;cursor:not-allowed}
+.btn:hover:not(:disabled){filter:brightness(.96)}
+.acts{display:grid;gap:8px;margin-top:16px}
+.status{margin:12px 0 0;font-size:.9rem;min-height:2.6em;color:var(--muted)}
+.status.ok{color:var(--ok)}.status.err{color:var(--err)}.status.warn{color:var(--warn)}
+.drop{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;min-height:380px;padding:20px;border:2px dashed var(--dropb);border-radius:16px;background:var(--drop);cursor:pointer}
+.drop.compact{min-height:110px}
+.drop.over{border-color:var(--accent);background:var(--soft)}
+.dt{font-weight:700;margin:0 0 8px;font-size:1.05rem;color:var(--text)}
+.dm{margin:0;font-size:.85rem;color:var(--muted)}
+.prev{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.tabmock{display:flex;align-items:center;gap:8px;min-width:200px;height:40px;padding:0 14px;border-radius:10px 10px 0 0;font-size:.85rem}
+.tabmock.light{background:#fff;color:#111827;border:1px solid #d3d9e6}
+.tabmock.dark{background:#202124;color:#e8eaed;border:1px solid #3c4043}
+.tabmock img{width:16px;height:16px;flex:none}
+.tabmock span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:150px}
+.checker{background:conic-gradient(var(--chk1) 25%,var(--chk2) 0 50%,var(--chk1) 0 75%,var(--chk2) 0) 0 0/16px 16px}
+.big{width:112px;height:112px;display:flex;align-items:center;justify-content:center;border-radius:12px;border:1px solid var(--border)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:10px;display:flex;flex-direction:column;gap:6px;font-size:.82rem}
+.thumb{height:84px;display:flex;align-items:center;justify-content:center;border-radius:8px}
+.thumb img{max-width:80px;max-height:80px}
+.card b{font-size:.88rem;word-break:break-all}
+.card .u{color:var(--muted);flex:1}
+.card .btn{min-height:44px;font-size:.85rem}
+textarea{width:100%;border:1px solid var(--border);border-radius:10px;background:var(--surface);color:var(--text);font:13px/1.5 ui-monospace,Menlo,Consolas,monospace;padding:10px;resize:vertical}
+.cp{margin-top:6px}
+main{padding-bottom:40px}
+.prose{max-width:860px;margin-top:36px}
+.prose h2{font-size:1.6rem;line-height:1.25;margin:44px 0 12px;letter-spacing:-.01em}
+.prose h3{font-size:1.2rem;margin:26px 0 8px}
+.prose p,.prose li{max-width:75ch}
+.prose li{margin:6px 0}
+.box{background:var(--surface);border:1px solid var(--border);border-left:5px solid var(--accent);border-radius:12px;padding:16px 20px;margin:28px 0}
+.box h2{margin:0 0 8px!important;font-size:1.25rem!important}
+.toc{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:14px 20px;margin:24px 0}
+.toc ol{columns:2;margin:6px 0 0;padding-left:20px}
+.toc a{display:inline-block;padding:3px 0}
+.tw{overflow-x:auto;margin:14px 0}
+table{border-collapse:collapse;width:100%;font-size:.93rem;background:var(--surface)}
+th,td{border:1px solid var(--border);padding:9px 12px;text-align:left;vertical-align:top}
+th{background:var(--soft)}
+details{background:var(--surface);border:1px solid var(--border);border-radius:12px;margin:10px 0}
+summary{cursor:pointer;padding:14px 18px;font-weight:700;min-height:44px}
+details p{margin:0;padding:0 18px 16px}
+dt{font-weight:700;margin-top:12px}
+dd{margin:2px 0 0}
+.rel{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:10px;padding:0;list-style:none}
+.rel li{max-width:none;margin:0}
+.rel a{display:block;height:100%;background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:12px 14px;text-decoration:none;color:var(--text)}
+.rel a strong{display:block;color:var(--accent)}
+.rel a span{font-size:.9rem;color:var(--muted)}
+footer{background:var(--surface);border-top:1px solid var(--border);padding:28px 0;font-size:.92rem;color:var(--muted)}
+footer ul{list-style:none;display:flex;flex-wrap:wrap;gap:6px 18px;padding:0;margin:0 0 12px}
+footer a{display:inline-block;padding:8px 0}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+@media(max-width:860px){.tool{grid-template-columns:1fr}.panel{border-right:0;border-bottom:1px solid var(--border)}.drop{min-height:260px}.toc ol{columns:1}}
+.vw{margin-top:10px}
+video{display:block;width:100%;max-height:360px;background:#000;border-radius:12px}
+.tr{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.mini{min-height:44px;font-size:.8rem;padding:0 8px;margin-top:6px;width:100%}
+progress{width:100%;height:14px;accent-color:var(--accent)}
+.chk{display:flex;align-items:center;gap:10px;margin:14px 0 0;font-weight:500;min-height:44px}
+.chk input{width:22px;height:22px;accent-color:var(--accent)}
+.res img{max-width:100%;border-radius:12px;border:1px solid var(--border);display:block;background:var(--surface)}
+.info{margin:10px 0;font-size:.9rem;color:var(--muted)}
+</style>
+</head>
+<body>
+<header class="hdr"><div class="hin">
+<a class="logo" href="https://globrik.com/">Globrik</a>
+<nav class="main" aria-label="Globrik tools">
+<a href="https://videotrimmer.globrik.com/">Video Trimmer</a><a href="https://compressvideo.globrik.com/">Compress Video</a><a href="https://mp4togif.globrik.com/">MP4 to GIF</a><a href="https://screenrecorder.globrik.com/">Screen Recorder</a><a href="https://videotomp3.globrik.com/">Video to MP3</a>
+</nav>
+</div></header>
+<main>
+<div class="wrap">
+<h1>Video to GIF Converter – Free Online GIF Maker</h1>
+<p class="lead">Trim any clip, choose the size and frame rate, and download an animated GIF without uploading your video.</p>
+
+<section class="tool" aria-label="Video to GIF converter tool">
+<div class="panel">
+<div class="ph">Trim</div>
+<div class="tr">
+<div><label for="st">Start (seconds)</label><input type="number" id="st" value="0" min="0" step="0.1" inputmode="decimal"><button type="button" class="btn mini" id="setS">Use current time</button></div>
+<div><label for="en">End (seconds)</label><input type="number" id="en" value="5" min="0" step="0.1" inputmode="decimal"><button type="button" class="btn mini" id="setE">Use current time</button></div>
+</div>
+<div class="ph">Output</div>
+<div class="tr">
+<div><label for="fps">Frame rate</label><select id="fps"><option value="5">5 fps</option><option value="8">8 fps</option><option value="10" selected>10 fps</option><option value="12">12 fps</option><option value="15">15 fps</option><option value="20">20 fps</option></select></div>
+<div><label for="wd">Width</label><select id="wd"><option value="240">240 px</option><option value="320">320 px</option><option value="480" selected>480 px</option><option value="640">640 px</option><option value="800">800 px</option></select></div>
+</div>
+<div class="tr">
+<div><label for="col">Colors</label><select id="col"><option value="256" selected>256</option><option value="128">128</option><option value="64">64</option><option value="32">32</option></select></div>
+<div><label for="loop">Loop</label><select id="loop"><option value="forever" selected>Forever</option><option value="once">Play once</option></select></div>
+</div>
+<label class="chk"><input type="checkbox" id="dith"> Smoother gradients (dithering)</label>
+<p class="info" id="est"></p>
+<div class="acts">
+<button type="button" class="btn pri" id="go" disabled>Convert to GIF</button>
+<button type="button" class="btn" id="cancel" hidden>Cancel</button>
+<button type="button" class="btn" id="resetBtn">Reset / Start over</button>
+</div>
+<div id="progW" hidden style="margin-top:12px"><label for="prog" class="sr">Conversion progress</label><progress id="prog" max="1" value="0"></progress></div>
+<p class="status" id="status" role="status" aria-live="polite">Add a video to start.</p>
+<a class="btn pri" id="dl2" href="#" download="video.gif" hidden style="width:100%">Download GIF</a>
+</div>
+<div class="stage">
+<div class="drop" id="drop" role="button" tabindex="0" aria-label="Drop a video here, tap to choose a file, or paste a copied video file">
+<p class="dt" id="dropT">Drop a video here, tap to choose, or paste</p>
+<p class="dm" id="dropM">MP4, WebM, MOV up to 500 MB. Stays in your browser.</p>
+</div>
+<input type="file" id="file" accept="video/*" hidden>
+<div class="vw" id="vw" hidden>
+<div class="ph">Preview and pick your clip</div>
+<video id="vid" controls muted playsinline preload="auto" aria-label="Video preview"></video>
+</div>
+<div class="res vw" id="res" hidden>
+<div class="ph">Your GIF</div>
+<img id="gifimg" alt="Animated GIF made from your video" width="480" height="270">
+<p class="info" id="ginfo"></p>
+<a class="btn pri" id="dl" href="#" download="video.gif">Download GIF</a>
+<button type="button" class="btn" id="back" style="margin-left:8px">Back to video</button>
+</div>
+</div>
+</section>
+<noscript><p>This tool needs JavaScript. Please turn it on in your browser settings.</p></noscript>
+
+<article class="prose">
+
+<section class="box" aria-labelledby="qa"><h2 id="qa">Quick answer: how to convert a video to GIF</h2>
+<p>To convert a video to GIF, drop your file into the tool above, set the start and end times, choose a width and frame rate, then press Convert to GIF. Keep clips short, around 3 to 6 seconds, and widths at 480 pixels or less so the file stays small enough to share.</p>
+<ol>
+<li>Drop in an MP4, WebM or MOV file.</li>
+<li>Play the preview and set the start and end of the part you want.</li>
+<li>Pick a width, frame rate and number of colors.</li>
+<li>Press Convert to GIF, then download the result.</li>
+</ol></section>
+<nav class="toc" aria-label="Table of contents"><strong>On this page</strong>
+<ol>
+<li><a href="#why">Why use this tool</a></li><li><a href="#guide">Step-by-step guide</a></li><li><a href="#specs">Formats and limits</a></li><li><a href="#uses">Use cases</a></li>
+<li><a href="#features">Key features</a></li><li><a href="#tips">Tips and mistakes</a></li><li><a href="#privacy">Privacy and security</a></li><li><a href="#compare">Alternatives</a></li>
+<li><a href="#fix">Troubleshooting</a></li><li><a href="#glossary">Glossary</a></li><li><a href="#faq">FAQ</a></li><li><a href="#related">Related tools</a></li>
+</ol></nav>
+
+<p>A video to GIF converter picks a short stretch of a video, grabs still frames from it and stitches them into one looping animated image. This free online video to GIF converter does it entirely in your browser. You choose the start and end, the width, the frame rate and the number of colors, and it builds a standard GIF you can drop into chats, emails, documentation and social posts. There's no signup, no watermark and no upload, so private clips stay on your device. The whole point is a small, smooth, shareable loop in under a minute.</p>
+
+<h2 id="why">Why use this video to GIF converter</h2>
+<ul>
+<li><strong>Your video stays on your device.</strong> It's processed in your browser and never uploaded.</li>
+<li><strong>Trim inside the tool.</strong> Play the preview, press "Use current time" for the start and end, and convert only the moment you need.</li>
+<li><strong>You control file size.</strong> Width, frame rate, color count and length are all yours to set, and the page shows the frame count before you convert.</li>
+<li><strong>One shared color palette.</strong> The tool samples frames across the whole clip and builds a single palette, which avoids the color flicker that per-frame palettes can cause.</li>
+<li><strong>Optional dithering.</strong> Turn on smoother gradients for sunsets and skin tones, or leave it off for the smallest file.</li>
+<li><strong>Loop once or forever.</strong> Looping forever is the usual choice, but a single play works for a short reveal.</li>
+<li><strong>No signup and no watermark.</strong> Nothing is stamped on your GIF.</li>
+</ul>
+
+<h2 id="guide">Step-by-step guide to making a GIF from a video</h2>
+<h3>1. Add your video</h3>
+<p>Drag a video onto the drop area, tap it to choose a file, or paste a copied video file. MP4 with H.264 and WebM play in nearly every browser, and MOV often works too. If the page can't play your file, convert it to MP4 first. A video preview appears as soon as it loads.</p>
+<h3>2. Pick the moment</h3>
+<p>Scrub the preview to the exact second you want to begin, then press "Use current time" under Start. Do the same for End. You can also type seconds directly, such as 2.4. If the clip is long and you want a rough cut first, the <a href="https://videotrimmer.globrik.com/">Video Trimmer</a> makes it easy to shorten the source file.</p>
+<p>Aim for 3 to 6 seconds. A GIF is a loop, so the best ones have a clear start and finish, and a small action that repeats well.</p>
+<h3>3. Choose size and frame rate</h3>
+<p>Width has the biggest effect on file size. 480 pixels is a good default for chats and web pages, 320 suits small previews, and 640 or 800 are for when detail matters more than weight. The tool never enlarges a video, so a 360-pixel-wide source stays at 360 even if you pick 640.</p>
+<p>For frame rate, 10 per second keeps files light and looks fine for most screen captures and reactions. Use 15 for sports or fast panning. Go to 20 only for short clips.</p>
+<h3>4. Set colors, dithering and looping</h3>
+<p>256 colors gives the best look. Dropping to 128, 64 or 32 shrinks the file, which can be worth it for flat graphics and screen recordings with few colors. Dithering adds a fine pattern that makes gradients look smoother but raises the file size. Looping forever is the default.</p>
+<h3>5. Convert and download</h3>
+<p>Press Convert to GIF. A progress bar shows each frame as it's captured and encoded, and you can cancel at any time. When it's done, the GIF plays in the result area with its size, frame count and length shown underneath. Press Download GIF to save it. If it's heavier than you'd like, go back, lower the width or frame rate, and convert again.</p>
+
+<h2 id="specs">Supported formats, sizes and limits</h2>
+<div class="tw"><table>
+<thead><tr><th>Item</th><th>Limit or behavior</th></tr></thead>
+<tbody>
+<tr><td>Input video</td><td>Any video your browser can play, usually MP4 (H.264), WebM and often MOV or M4V</td></tr>
+<tr><td>Maximum video file size</td><td>500 MB</td></tr>
+<tr><td>Maximum clip length</td><td>30 seconds</td></tr>
+<tr><td>Maximum frames</td><td>450 per GIF</td></tr>
+<tr><td>Width options</td><td>240, 320, 480, 640 and 800 px, never larger than the source video</td></tr>
+<tr><td>Frame rate options</td><td>5, 8, 10, 12, 15 and 20 frames per second</td></tr>
+<tr><td>Colors</td><td>256, 128, 64 or 32 in one shared palette</td></tr>
+<tr><td>Looping</td><td>Forever or play once</td></tr>
+<tr><td>Audio</td><td>Not included, because GIF has no sound</td></tr>
+<tr><td>Output</td><td>Standard GIF (89a), no watermark</td></tr>
+</tbody></table></div>
+<p>A GIF stores each frame delay in hundredths of a second, so the tool rounds the delay to the nearest hundredth. That means 15 frames per second plays at about 14.3, which is hard to notice. Delays below 2 hundredths are avoided, because some browsers slow them down.</p>
+
+<h2 id="uses">Who needs a video to GIF converter</h2>
+<ul>
+<li><strong>Support and documentation writers</strong> who turn a short screen capture from the <a href="https://screenrecorder.globrik.com/">Screen Recorder</a> into a looping how-to step.</li>
+<li><strong>Developers</strong> adding a demo loop to a README, pull request or bug report.</li>
+<li><strong>Social media managers</strong> making a quick reaction or product loop from a longer clip.</li>
+<li><strong>Teachers and trainers</strong> showing a motion, such as a chemistry reaction or a drawing stroke, in a slide.</li>
+<li><strong>Online sellers</strong> showing a product turning or a feature working on a listing page.</li>
+<li><strong>Everyone with a chat habit</strong> who wants to send a funny moment from a video.</li>
+</ul>
+
+<h2 id="features">Key features and benefits</h2>
+<ul>
+<li>Built-in video preview with start and end buttons.</li>
+<li>Width, frame rate, color count, dithering and loop controls.</li>
+<li>Frame count and output size shown before you convert.</li>
+<li>Progress bar and a Cancel button during conversion.</li>
+<li>Shared color palette sampled across the whole clip.</li>
+<li>Instant preview of the finished GIF, with its size and length.</li>
+<li>Works in the browser on desktop, tablet and phone.</li>
+</ul>
+
+<h2 id="tips">Expert tips and common mistakes</h2>
+<h3>Tips for a smaller, sharper GIF</h3>
+<ul>
+<li><strong>Shorter is almost always better.</strong> Cutting a clip from 6 seconds to 3 halves the frames and roughly halves the file.</li>
+<li><strong>Crop the subject before you export.</strong> Large empty areas and wide black bars cost pixels. If the source has them, trim the video first with the <a href="https://compressvideo.globrik.com/">Compress Video</a> tool or crop your frames.</li>
+<li><strong>Screen recordings love fewer colors.</strong> Flat interface screens usually look fine at 64 colors and shrink noticeably.</li>
+<li><strong>Photos and faces need 256 colors.</strong> Add dithering only if you see banding in smooth areas.</li>
+<li><strong>Pick a loop-friendly moment.</strong> End on a pose close to where you began, so the jump back to the start isn't jarring.</li>
+<li><strong>Keep text readable.</strong> Small captions blur at 320 pixels. Use 480 or more if people need to read them.</li>
+</ul>
+<h3>Mistakes to avoid</h3>
+<ul>
+<li>Converting a full 30-second clip at 800 pixels and wondering why it's huge.</li>
+<li>Expecting sound. GIF has none.</li>
+<li>Playing the video while it's converting. The preview locks during conversion for this reason.</li>
+<li>Setting 20 frames per second for a static screen recording where 8 would look identical.</li>
+<li>Using a GIF where a short MP4 would do. For long clips or smooth photos, video is far smaller.</li>
+</ul>
+
+<h2 id="privacy">Privacy and security</h2>
+<p>Your files are processed in your browser and are never uploaded. When you add a video, the page opens it from your device, seeks to each moment, draws the frame onto a canvas and encodes the GIF in memory. There's no upload request in that process.</p>
+<p>The finished GIF lives in the open tab until you reset, load another video or close the page. This page doesn't ask for an account or an email address. Only convert videos you own or have permission to use, because the tool can't judge ownership.</p>
+
+<h2 id="compare">This tool vs alternatives</h2>
+<div class="tw"><table>
+<thead><tr><th></th><th>This browser tool</th><th>Desktop editor</th><th>Server-based online converters</th></tr></thead>
+<tbody>
+<tr><td>Where your video is processed</td><td>In your browser</td><td>On your computer</td><td>Often on the provider's server</td></tr>
+<tr><td>Setup</td><td>None</td><td>Install and learn the app</td><td>None, though some need an account</td></tr>
+<tr><td>Speed on long clips</td><td>Limited by your device</td><td>Fast on a strong computer</td><td>Depends on upload and queue</td></tr>
+<tr><td>Fine control</td><td>Trim, size, rate, colors, loop</td><td>Full editing</td><td>Varies</td></tr>
+<tr><td>Best for</td><td>Quick, private clips</td><td>Long or heavily edited GIFs</td><td>Convenience when you trust the service</td></tr>
+</tbody></table></div>
+<p>If you need effects, text overlays or color grading, a desktop editor is the right tool. For simple cut-and-convert jobs, a browser converter is faster. If your file is an MP4 and you want a dedicated page for that format, try the <a href="https://mp4togif.globrik.com/">MP4 to GIF Converter</a>.</p>
+
+<h2 id="fix">Troubleshooting</h2>
+<ul>
+<li><strong>The video won't load.</strong> Your browser may not support its codec, which is common with HEVC (H.265). Convert it to MP4 (H.264) or WebM, then try again.</li>
+<li><strong>The GIF is too large.</strong> Lower the width, use 10 frames per second, trim the range and try 128 or 64 colors. Each change cuts size on its own.</li>
+<li><strong>The colors look grainy or banded.</strong> Use 256 colors and try the dithering option. Banding in gradients is a limit of the GIF format.</li>
+<li><strong>The conversion is slow.</strong> Large widths and many frames take longer on phones and older laptops. Try 320 or 480 pixels and a shorter range.</li>
+<li><strong>The error says there are too many frames.</strong> The limit is 450 frames. Shorten the clip or lower the frame rate.</li>
+<li><strong>The GIF doesn't loop.</strong> Check that Loop is set to Forever. Some apps show only the first frame of a GIF, so test it in a browser tab.</li>
+<li><strong>The preview jumps or stalls.</strong> Large videos need time to buffer. Wait a moment after loading before pressing Use current time.</li>
+<li><strong>The file is over 500 MB.</strong> Shorten it first with the <a href="https://videotrimmer.globrik.com/">Video Trimmer</a>, then convert the shorter file.</li>
+</ul>
+
+<h2 id="glossary">Glossary</h2>
+<dl>
+<dt>GIF</dt><dd>Graphics Interchange Format, an image format that can hold several frames and play them as an animation. <a href="https://en.wikipedia.org/wiki/GIF" rel="noopener">Wikipedia covers its history</a>.</dd>
+<dt>Frame rate</dt><dd>How many still frames play each second. Higher rates look smoother and make larger files.</dd>
+<dt>Color palette</dt><dd>The set of colors a GIF is allowed to use. One GIF frame can hold at most 256.</dd>
+<dt>Dithering</dt><dd>A pattern of tiny dots that fakes in-between colors, which smooths gradients when the palette is limited.</dd>
+<dt>Codec</dt><dd>The method a video file uses to compress picture data. H.264 plays almost everywhere. The <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video" rel="noopener">MDN video guide</a> explains browser support.</dd>
+<dt>Loop count</dt><dd>How many times a GIF repeats. Forever is the common setting for reactions and demos.</dd>
+</dl>
+
+<h2 id="faq">Frequently asked questions</h2>
+<details><summary>Is this video to GIF converter really free?</summary><p>Yes. It's free with no trial, no watermark and no account. You can convert as many clips as you like. The limits are technical: video files up to 500 MB, clips up to 30 seconds and 450 frames. Your own device does the work, so a slower phone or laptop will simply take longer on big clips.</p></details>
+<details><summary>Is it safe to use my video here?</summary><p>Your video never leaves your device. The page plays it locally, grabs frames onto a canvas and builds the GIF in memory, with no upload step. You can check this by turning off your internet connection after the page loads and converting a short clip. Reset or close the page and the GIF is released.</p></details>
+<details><summary>Do I need to sign up or give an email?</summary><p>No. There's no signup, no email field and no download gate. Drop in a video, set the range and press Convert to GIF. Nothing in the process asks who you are, so you can use it for personal clips, client work or a quick test without leaving any details behind.</p></details>
+<details><summary>What video formats can I convert to GIF?</summary><p>Any video your browser can play. In practice that means MP4 with H.264, WebM and often MOV. Some files, such as HEVC (H.265) videos, won't play in every browser. If you see an error, convert the file to MP4 (H.264) or WebM first. For MP4 files in particular, you can also try the MP4 to GIF Converter.</p></details>
+<details><summary>Why is my GIF file so big?</summary><p>GIF compresses poorly compared with video, and size grows with width, frame rate and length. A wide, long, smooth clip can reach many megabytes. Lower the width to 320 or 480 pixels, drop to 10 frames per second, trim a second or two, and use fewer colors. Turn dithering off, since it adds detail the compressor can't squeeze.</p></details>
+<details><summary>What frame rate is best for a GIF?</summary><p>Ten to fifteen frames per second suits most clips. Ten keeps files small and still looks smooth for screen recordings and reactions. Fifteen helps with fast action. Going to 20 makes motion fluid but roughly doubles the frame count compared with 10, so the file grows quickly. Five to eight works for slow demos.</p></details>
+<details><summary>Does a GIF keep the sound from my video?</summary><p>No. GIF is a silent format and has no audio track, so the sound is dropped. If you need audio, share the original video or a short MP4 instead. If you only need the sound, a separate video to MP3 tool is the right choice. The GIF made here contains only the picture.</p></details>
+<details><summary>How long can the GIF be?</summary><p>This tool accepts clips up to 30 seconds and up to 450 frames, whichever you reach first. For most uses, 3 to 6 seconds is plenty and gives a file you can actually share. If your clip is longer, set a start and end time, or cut the video first with the Video Trimmer.</p></details>
+<details><summary>Will the GIF lose quality compared to the video?</summary><p>Yes, to some degree. A GIF frame can only use up to 256 colors, so photos and gradients may look grainier than the source. This tool builds one shared palette from the clip. Dithering can smooth gradients at the cost of a larger file, and a smaller width hides some of the color loss.</p></details>
+<details><summary>Can I use the converter on my phone or offline?</summary><p>Yes to both, with limits. The page works on current iPhone and Android browsers with large tap targets. Once it has fully loaded, the conversion needs no connection, because nothing goes to a server. Opening the page offline for the first time only works if your browser has it cached, so load it once while you're online.</p></details>
+
+
+<h2 id="conclusion">Make your GIF now</h2>
+<p>A good loop takes a minute, not an afternoon. Use this free online video to GIF converter to cut the best few seconds from your video, set a sensible width and frame rate, and download a GIF that's small enough to share. Keep it short, keep it simple, and check the result before you send it. If it's too heavy, lower one setting and convert again.</p>
+
+<h2 id="related">Related tools</h2>
+<ul class="rel">
+<li><a href="https://videotrimmer.globrik.com/"><strong>Video Trimmer</strong><span>Cut a long video down before you convert it.</span></a></li>
+<li><a href="https://compressvideo.globrik.com/"><strong>Compress Video</strong><span>Shrink a large video file before you use it.</span></a></li>
+<li><a href="https://mp4togif.globrik.com/"><strong>MP4 to GIF Converter</strong><span>A dedicated page for turning MP4 files into GIFs.</span></a></li>
+<li><a href="https://screenrecorder.globrik.com/"><strong>Screen Recorder</strong><span>Record your screen, then turn the clip into a GIF.</span></a></li>
+<li><a href="https://videotomp3.globrik.com/"><strong>Video to MP3 Converter</strong><span>Keep only the sound from a video.</span></a></li>
+</ul>
+
+</article>
+</div>
+</main>
+<footer><div class="wrap">
+<ul>
+<li><a href="https://sites.google.com/view/globriklegal/privacy-policy">Privacy Policy</a></li>
+<li><a href="https://sites.google.com/view/globriklegal/terms-of-use">Terms</a></li>
+<li><a href="https://sites.google.com/view/globriklegal/contact">Contact</a></li>
+<li><a href="https://sites.google.com/view/globriklegal/about">About</a></li>
+</ul>
+<p>Disclaimer: use only videos you own or have the right to use. Globrik claims no rights to the files you create here.</p>
+<p>© <span id="yr">2026</span> <a href="https://globrik.com/">Globrik</a></p>
+</div></footer>
+<script>
+try{document.getElementById('yr').textContent=new Date().getFullYear()}catch(e){}
+</script>
+<script>
+(function(){
+try{
+var $=function(s){return document.querySelector(s)};
+var MAXB=524288000,MAXSEC=30,MAXFR=450;
+var st={src:'',name:'video',dur:0,vw:0,vh:0,busy:false,cancel:false,gif:''};
+var v=$('#vid'),drop=$('#drop'),fileIn=$('#file'),statusEl=$('#status'),prog=$('#prog'),progW=$('#progW');
+function setStatus(m,k){statusEl.className='status '+(k||'');statusEl.textContent=m}
+function fmt(b){return b>=1048576?(b/1048576).toFixed(2)+' MB':Math.max(1,Math.round(b/1024))+' KB'}
+function tick(){return new Promise(function(r){setTimeout(r,0)})}
+function seekTo(t){
+ return new Promise(function(res){
+  var done=false,to;
+  function ok(){if(done)return;done=true;v.removeEventListener('seeked',ok);clearTimeout(to);res()}
+  if(Math.abs(v.currentTime-t)<0.0005){setTimeout(ok,40);return}
+  v.addEventListener('seeked',ok);
+  to=setTimeout(ok,5000);
+  v.currentTime=t;
+ });
+}
+function readOpts(){
+ var s=parseFloat($('#st').value),e=parseFloat($('#en').value);
+ if(isNaN(s)||isNaN(e))throw new Error('Enter a start and end time in seconds.');
+ s=Math.max(0,s);e=Math.min(e,st.dur);
+ if(e-s<0.2)throw new Error('The end time must be at least 0.2 seconds after the start time.');
+ if(e-s>MAXSEC)throw new Error('Clips can be up to 30 seconds long. Shorten the range and try again.');
+ var fps=+$('#fps').value,n=Math.max(1,Math.floor((e-s)*fps));
+ if(n>MAXFR)throw new Error('That would be '+n+' frames and the limit is '+MAXFR+'. Shorten the clip or lower the frame rate.');
+ var w=Math.min(+$('#wd').value,st.vw),h=Math.max(1,Math.round(w*st.vh/st.vw));
+ var colors=+$('#col').value,bits=colors===256?8:colors===128?7:colors===64?6:5;
+ return{s:s,e:e,fps:fps,n:n,w:w,h:h,colors:colors,bits:bits,loop:$('#loop').value,dither:$('#dith').checked};
+}
+function estimate(){
+ if(!st.vw)return;
+ try{var o=readOpts();$('#est').textContent='About '+o.n+' frames at '+o.w+'×'+o.h+' px.';$('#est').className='info'}
+ catch(e){$('#est').textContent=e.message;$('#est').className='info'}
+}
+function medianCut(px,count,bits){
+ var total=px.length/3,idx=new Uint32Array(total),i;
+ for(i=0;i<total;i++)idx[i]=i;
+ var boxes=[{s:0,e:total}];
+ function range(b){
+  var mn=[255,255,255],mx=[0,0,0];
+  for(var j=b.s;j<b.e;j++){var p=idx[j]*3;for(var c=0;c<3;c++){var val=px[p+c];if(val<mn[c])mn[c]=val;if(val>mx[c])mx[c]=val}}
+  var r=[mx[0]-mn[0],mx[1]-mn[1],mx[2]-mn[2]],ch=r[0]>=r[1]&&r[0]>=r[2]?0:(r[1]>=r[2]?1:2);
+  b.ch=ch;b.r=r[ch];
+ }
+ range(boxes[0]);
+ while(boxes.length<count){
+  var bi=-1,best=-1;
+  for(i=0;i<boxes.length;i++){var b=boxes[i];if(b.e-b.s>1&&b.r>best){best=b.r;bi=i}}
+  if(bi<0||best<=0)break;
+  var bx=boxes[bi],ch=bx.ch;
+  idx.subarray(bx.s,bx.e).sort(function(a,b2){return px[a*3+ch]-px[b2*3+ch]});
+  var mid=(bx.s+bx.e)>>1,n1={s:bx.s,e:mid},n2={s:mid,e:bx.e};
+  range(n1);range(n2);boxes.splice(bi,1,n1,n2);
+ }
+ var size=1<<bits,pal=new Uint8Array(size*3);
+ boxes.forEach(function(b,k){
+  var r=0,g=0,bl=0,c=b.e-b.s;
+  for(var j=b.s;j<b.e;j++){var p=idx[j]*3;r+=px[p];g+=px[p+1];bl+=px[p+2]}
+  pal[k*3]=Math.round(r/c);pal[k*3+1]=Math.round(g/c);pal[k*3+2]=Math.round(bl/c);
+ });
+ for(var k2=boxes.length;k2<size;k2++){pal[k2*3]=pal[0];pal[k2*3+1]=pal[1];pal[k2*3+2]=pal[2]}
+ return pal;
+}
+function makeNearest(pal){
+ var lut=new Int16Array(32768).fill(-1),n=pal.length/3;
+ return function(r,g,b){
+  var key=((r>>3)<<10)|((g>>3)<<5)|(b>>3),c=lut[key];
+  if(c>=0)return c;
+  var best=0,bd=1e9;
+  for(var i=0;i<n;i++){var dr=r-pal[i*3],dg=g-pal[i*3+1],db=b-pal[i*3+2],d=dr*dr+dg*dg+db*db;if(d<bd){bd=d;best=i}}
+  lut[key]=best;return best;
+ };
+}
+function mapPlain(d,w,h,near){
+ var out=new Uint8Array(w*h);
+ for(var i=0,p=0;i<out.length;i++,p+=4)out[i]=near(d[p],d[p+1],d[p+2]);
+ return out;
+}
+function mapDither(d,w,h,pal,near){
+ var out=new Uint8Array(w*h),buf=new Float32Array(w*h*3),i;
+ for(i=0;i<w*h;i++){buf[i*3]=d[i*4];buf[i*3+1]=d[i*4+1];buf[i*3+2]=d[i*4+2]}
+ function cl(x){return x<0?0:x>255?255:x}
+ for(var y=0;y<h;y++)for(var x=0;x<w;x++){
+  var o=(y*w+x)*3,r=cl(buf[o]),g=cl(buf[o+1]),b=cl(buf[o+2]);
+  var c=near(Math.round(r),Math.round(g),Math.round(b));out[y*w+x]=c;
+  var er=r-pal[c*3],eg=g-pal[c*3+1],eb=b-pal[c*3+2];
+  if(x+1<w){buf[o+3]+=er*7/16;buf[o+4]+=eg*7/16;buf[o+5]+=eb*7/16}
+  if(y+1<h){
+   var q=o+w*3;
+   if(x>0){buf[q-3]+=er*3/16;buf[q-2]+=eg*3/16;buf[q-1]+=eb*3/16}
+   buf[q]+=er*5/16;buf[q+1]+=eg*5/16;buf[q+2]+=eb*5/16;
+   if(x+1<w){buf[q+3]+=er/16;buf[q+4]+=eg/16;buf[q+5]+=eb/16}
+  }
+ }
+ return out;
+}
+var HT=null;
+function lzw(idx,mcs){
+ var out=[],cur=0,sh=0,clear=1<<mcs,eoi=clear+1,next=eoi+1,size=mcs+1;
+ if(!HT)HT=new Int32Array(1<<20);
+ HT.fill(-1);
+ function emit(c){cur|=c<<sh;sh+=size;while(sh>=8){out.push(cur&255);cur>>>=8;sh-=8}}
+ emit(clear);
+ var p=idx[0];
+ for(var i=1;i<idx.length;i++){
+  var k=idx[i],key=(p<<8)|k,c=HT[key];
+  if(c!==-1){p=c;continue}
+  emit(p);
+  if(next===4096){emit(clear);HT.fill(-1);next=eoi+1;size=mcs+1}
+  else{if(next>=(1<<size))size++;HT[key]=next++}
+  p=k;
+ }
+ emit(p);emit(eoi);
+ if(sh>0)out.push(cur&255);
+ return out;
+}
+function blocks(bytes){
+ var parts=[];
+ for(var i=0;i<bytes.length;i+=255){
+  var len=Math.min(255,bytes.length-i),a=new Uint8Array(len+1);
+  a[0]=len;a.set(bytes.slice(i,i+len),1);parts.push(a);
+ }
+ parts.push(new Uint8Array([0]));
+ return parts;
+}
+function u16(n){return[n&255,(n>>8)&255]}
+function clearResult(){
+ if(st.gif){URL.revokeObjectURL(st.gif);st.gif=''}
+ $('#res').hidden=true;$('#gifimg').removeAttribute('src');
+ $('#dl2').hidden=true;if(st.src)$('#vw').hidden=false;
+}
+function ui(busy){
+ st.busy=busy;
+ ['st','en','fps','wd','col','loop','dith','setS','setE','go'].forEach(function(id){$('#'+id).disabled=busy});
+ $('#cancel').hidden=!busy;progW.hidden=!busy;
+ v.controls=!busy;
+}
+async function convert(){
+ if(st.busy||!st.src)return;
+ var o;
+ try{o=readOpts()}catch(e){setStatus(e.message,'err');return}
+ st.cancel=false;ui(true);clearResult();v.pause();
+ var c=document.createElement('canvas');c.width=o.w;c.height=o.h;
+ var x=c.getContext('2d',{willReadFrequently:true});
+ var last=Math.max(0,st.dur-0.05);
+ try{
+  setStatus('Analyzing colors…','');prog.value=0;
+  var pool=[],ns=Math.min(8,o.n),i;
+  for(i=0;i<ns;i++){
+   var fi=ns===1?0:Math.round(i*(o.n-1)/(ns-1));
+   await seekTo(Math.min(o.s+fi/o.fps,last));
+   if(st.cancel)throw new Error('cancel');
+   x.drawImage(v,0,0,o.w,o.h);
+   var d0=x.getImageData(0,0,o.w,o.h).data,step=Math.max(1,Math.floor(o.w*o.h/8000));
+   for(var p=0;p<o.w*o.h;p+=step)pool.push(d0[p*4],d0[p*4+1],d0[p*4+2]);
+  }
+  var pal=medianCut(new Uint8Array(pool),o.colors,o.bits),near=makeNearest(pal);
+  var delay=Math.max(2,Math.round(100/o.fps)),parts=[];
+  var head=[71,73,70,56,57,97].concat(u16(o.w),u16(o.h),[0x80|(7<<4)|(o.bits-1),0,0]);
+  parts.push(new Uint8Array(head),pal);
+  if(o.loop==='forever')parts.push(new Uint8Array([0x21,0xFF,0x0B,78,69,84,83,67,65,80,69,50,46,48,3,1,0,0,0]));
+  for(i=0;i<o.n;i++){
+   if(st.cancel)throw new Error('cancel');
+   await seekTo(Math.min(o.s+i/o.fps,last));
+   x.drawImage(v,0,0,o.w,o.h);
+   var img=x.getImageData(0,0,o.w,o.h);
+   var idx=o.dither?mapDither(img.data,o.w,o.h,pal,near):mapPlain(img.data,o.w,o.h,near);
+   var data=lzw(idx,o.bits);
+   parts.push(new Uint8Array([0x21,0xF9,4,4].concat(u16(delay),[0,0])));
+   parts.push(new Uint8Array([0x2C,0,0,0,0].concat(u16(o.w),u16(o.h),[0])));
+   parts.push(new Uint8Array([o.bits]));
+   blocks(data).forEach(function(b){parts.push(b)});
+   prog.value=(i+1)/o.n;
+   setStatus('Encoding frame '+(i+1)+' of '+o.n+'…','');
+   await tick();
+  }
+  parts.push(new Uint8Array([0x3B]));
+  var blob=new Blob(parts,{type:'image/gif'});
+  st.gif=URL.createObjectURL(blob);
+  $('#gifimg').src=st.gif;
+  $('#gifimg').width=o.w;$('#gifimg').height=o.h;
+  var a=$('#dl');a.href=st.gif;a.download=st.name.replace(/\.[^.]+$/,'')+'.gif';
+  $('#ginfo').textContent=o.w+'×'+o.h+' px · '+o.n+' frames · '+fmt(blob.size)+' · '+(o.n*delay/100).toFixed(1)+' s'+(o.loop==='forever'?' · loops forever':' · plays once');
+  var a2=$('#dl2');a2.href=st.gif;a2.download=a.download;a2.hidden=false;
+  $('#vw').hidden=true;$('#res').hidden=false;
+  $('#res').scrollIntoView({block:'nearest'});
+  setStatus('Done. Your GIF is ready to download.'+(blob.size>15728640?' It is over 15 MB, so lower the width, frame rate or length if you need a smaller file.':''),'ok');
+ }catch(e){
+  if(e&&e.message==='cancel')setStatus('Conversion cancelled.','');
+  else setStatus('Something went wrong while building the GIF. Try a shorter clip or a smaller width.','err');
+ }finally{ui(false)}
+}
+function loadFile(f){
+ if(!f)return;
+ var okType=/^video\//.test(f.type)||/\.(mp4|webm|mov|m4v|ogv|ogg)$/i.test(f.name||'');
+ if(!okType){setStatus('That file is not a video. Choose an MP4, WebM or MOV file.','err');return}
+ if(f.size>MAXB){setStatus('That file is larger than 500 MB. Trim or compress it first, then try again.','err');return}
+ clearResult();
+ if(st.src)URL.revokeObjectURL(st.src);
+ st.src=URL.createObjectURL(f);st.name=f.name||'video';
+ setStatus('Loading video…','');
+ v.onloadedmetadata=function(){
+  st.dur=v.duration;st.vw=v.videoWidth;st.vh=v.videoHeight;
+  if(!isFinite(st.dur)||!st.vw){setStatus('This video\'s length or size could not be read. Try an MP4 (H.264) or WebM file.','err');return}
+  $('#st').value='0';$('#en').value=(Math.min(st.dur,5)).toFixed(1);
+  $('#st').max=st.dur.toFixed(1);$('#en').max=st.dur.toFixed(1);
+  drop.classList.add('compact');
+  $('#dropT').textContent=(st.name.length>40?st.name.slice(0,37)+'…':st.name)+' ('+st.vw+'×'+st.vh+', '+st.dur.toFixed(1)+' s)';
+  $('#dropM').textContent='Tap to choose a different video, or drop or paste a new one.';
+  $('#vw').hidden=false;$('#go').disabled=false;
+  estimate();
+  setStatus('Video loaded. Set the start and end, then press Convert to GIF.','ok');
+ };
+ v.onerror=function(){
+  if(!v.getAttribute('src'))return;
+  st.src='';$('#vw').hidden=true;$('#go').disabled=true;
+  setStatus('Your browser could not play that video. It may be corrupted or use a codec your browser does not support, such as HEVC. Convert it to MP4 (H.264) or WebM and try again.','err');
+ };
+ v.src=st.src;v.muted=true;v.load();
+}
+function reset(){
+ st.cancel=true;clearResult();
+ if(st.src){URL.revokeObjectURL(st.src);st.src=''}
+ v.removeAttribute('src');v.load();
+ st.dur=st.vw=st.vh=0;fileIn.value='';
+ $('#st').value='0';$('#en').value='5';$('#fps').value='10';$('#wd').value='480';$('#col').value='256';$('#loop').value='forever';$('#dith').checked=false;
+ $('#vw').hidden=true;$('#go').disabled=true;$('#est').textContent='';
+ drop.classList.remove('compact');
+ $('#dropT').textContent='Drop a video here, tap to choose, or paste';
+ $('#dropM').textContent='MP4, WebM, MOV up to 500 MB. Stays in your browser.';
+ ui(false);$('#go').disabled=true;
+ setStatus('Reset. Add a video to start again.','');
+}
+drop.addEventListener('click',function(){if(!st.busy)fileIn.click()});
+drop.addEventListener('keydown',function(e){if((e.key==='Enter'||e.key===' ')&&!st.busy){e.preventDefault();fileIn.click()}});
+['dragenter','dragover'].forEach(function(t){drop.addEventListener(t,function(e){e.preventDefault();drop.classList.add('over')})});
+['dragleave','drop'].forEach(function(t){drop.addEventListener(t,function(e){e.preventDefault();drop.classList.remove('over')})});
+drop.addEventListener('drop',function(e){if(st.busy)return;var f=e.dataTransfer&&e.dataTransfer.files&&e.dataTransfer.files[0];loadFile(f)});
+fileIn.addEventListener('change',function(){loadFile(fileIn.files[0])});
+document.addEventListener('paste',function(e){
+ if(st.busy)return;
+ var it=e.clipboardData&&e.clipboardData.items;if(!it)return;
+ for(var i=0;i<it.length;i++){if(it[i].kind==='file'&&/^video\//.test(it[i].type)){loadFile(it[i].getAsFile());e.preventDefault();return}}
+});
+['st','en','fps','wd'].forEach(function(id){$('#'+id).addEventListener('input',estimate);$('#'+id).addEventListener('change',estimate)});
+$('#setS').addEventListener('click',function(){$('#st').value=v.currentTime.toFixed(1);estimate()});
+$('#setE').addEventListener('click',function(){$('#en').value=v.currentTime.toFixed(1);estimate()});
+$('#go').addEventListener('click',convert);
+$('#cancel').addEventListener('click',function(){st.cancel=true;setStatus('Cancelling…','')});
+$('#back').addEventListener('click',function(){$('#res').hidden=true;$('#dl2').hidden=true;$('#vw').hidden=false;setStatus('Adjust the clip or settings, then convert again.','')});
+$('#resetBtn').addEventListener('click',reset);
+}catch(err){
+ var s=document.getElementById('status');if(s){s.className='status err';s.textContent='This tool could not start in your browser. Please try a current version of Chrome, Firefox, Safari or Edge.'}
+}
+})();
+</script>
+</body>
+</html>
